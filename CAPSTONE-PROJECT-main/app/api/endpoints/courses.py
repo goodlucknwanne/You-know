@@ -1,10 +1,10 @@
 from typing import List
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from api.deps import require_admin
-from db.session import get_db
-from schemas.course import CourseCreate, CourseResponse, CourseUpdate
-from services.course_service import (
+from app.api.deps import require_admin
+from app.db.session import get_db
+from app.schemas.course import CourseCreate, CourseResponse, CourseUpdate
+from app.services.course_service import (
     create_course,
     delete_course,
     get_active_courses,

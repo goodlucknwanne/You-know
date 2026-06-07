@@ -1,10 +1,10 @@
 from typing import List
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from api.deps import require_admin, require_student
-from db.session import get_db
-from schemas.enrollment import EnrollmentResponse, EnrollmentSimple
-from services.enrollment_service import (
+from app.api.deps import require_admin, require_student
+from app.db.session import get_db
+from app.schemas.enrollment import EnrollmentResponse, EnrollmentSimple
+from app.services.enrollment_service import (
     admin_remove_student,
     deregister_student,
     enroll_student,

@@ -1,7 +1,7 @@
 from datetime import datetime
 from pydantic import BaseModel
-from schemas.user import UserResponse
-from schemas.course import CourseResponse
+from app.schemas.user import UserResponse
+from app.schemas.course import CourseResponse
 
 
 class EnrollmentResponse(BaseModel):

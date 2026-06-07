@@ -1,10 +1,10 @@
 from typing import List
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
-from models.enrollment import Enrollment
-from models.course import Course
-from models.user import User
-from services.course_service import get_course_by_id
+from app.models.enrollment import Enrollment
+from app.models.course import Course
+from app.models.user import User
+from app.services.course_service import get_course_by_id
 
 
 def enroll_student(db: Session, user: User, course_id: int) -> Enrollment:

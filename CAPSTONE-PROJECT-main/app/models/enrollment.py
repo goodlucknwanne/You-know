@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 from sqlalchemy import Column, DateTime, ForeignKey, Integer, UniqueConstraint
 from sqlalchemy.orm import relationship
-from db.session import Base
+from app.db.session import Base
 
 
 class Enrollment(Base):

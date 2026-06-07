@@ -1,8 +1,8 @@
 from typing import List, Optional
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
-from models.course import Course
-from schemas.course import CourseCreate, CourseUpdate
+from app.models.course import Course
+from app.schemas.course import CourseCreate, CourseUpdate
 
 
 def get_active_courses(db: Session) -> List[Course]:
